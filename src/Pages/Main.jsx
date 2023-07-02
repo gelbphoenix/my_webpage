@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import Profile from '../Components/Profile';
+import { MobileProfile } from '../Components/ProfileButton/';
 import { db } from '../Assets/database';
 import { Button } from 'flowbite-react';
 
@@ -37,9 +37,9 @@ const Main = () => {
               className="sm:text-3xl text-2xl pl-[5px]"
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[400px] w-full items-center">
+          <div className="md:hidden flex justify-between pt-6 max-w-[400px] w-full items-center">
             {profiles.map((profile, index) => (
-              <Profile
+              <MobileProfile
                 icon={profile.icon}
                 link={profile.link}
                 title={profile.title}

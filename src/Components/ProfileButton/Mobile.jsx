@@ -1,6 +1,6 @@
 import { Button, Tooltip } from 'flowbite-react';
 
-const Profile = ({ link, icon, title }) => {
+const MobileProfile = ({ link, icon, title }) => {
   return (
     <>
       <Tooltip content={title} placement="bottom">
@@ -18,4 +18,4 @@ const Profile = ({ link, icon, title }) => {
   );
 };
 
-export default Profile;
+export default MobileProfile;

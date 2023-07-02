@@ -3,10 +3,11 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { DesktopMenuButton, MobileMenuButton } from './MenuButton';
 import { DesktopThemeButton, MobileThemeButton } from './ThemeButton';
 import { db } from '../Assets/database';
+import { DesktopProfile } from './ProfileButton';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-  const { sites } = db;
+  const { sites, profiles } = db;
 
   const handleNav = () => setNav(!nav);
 
@@ -47,6 +48,20 @@ const Header = () => {
             />
           ))}
           <DesktopThemeButton />
+        </div>
+      </div>
+      <div
+        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(5*68px))/2)] right-0 z-10`}
+      >
+        <div className="flex flex-col">
+          {profiles.map((profile, index) => (
+            <DesktopProfile
+              key={index}
+              icon={profile.icon}
+              link={profile.link}
+              title={profile.title}
+            />
+          ))}
         </div>
       </div>
     </>

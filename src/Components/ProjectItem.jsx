@@ -18,7 +18,7 @@ const ProjectItem = ({ title, link }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className=" w-full mt-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-white font-bold"
+            className=" w-full mt-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-gray-600"
           >
             More Info
           </Button>
