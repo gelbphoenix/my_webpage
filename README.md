@@ -1,3 +1,3 @@
 # my_webpage
 
-![Webpage]('src/Assets/portfolio.png')
+![Webpage](src/Assets/portfolio.png)
