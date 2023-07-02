@@ -14,9 +14,6 @@ import {
 } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 
-// image imports
-import portfolioImg from './portfolio.webp';
-
 // JSON Database
 export const db = {
   about: [
@@ -68,14 +65,6 @@ export const db = {
       title: 'Github',
       link: 'https://github.com/gelbphoenix',
       icon: <FaGithub size={20} />,
-    },
-  ],
-  projects: [
-    {
-      title: 'This Portfolio',
-      img: portfolioImg,
-      tech: 'ReactJS, Vite, TailwindCSS',
-      link: 'https://github.com/gelbphoenix/my_webpage',
     },
   ],
   sites: [
