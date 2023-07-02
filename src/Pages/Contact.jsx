@@ -12,6 +12,12 @@ const Contact = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e] dark:text-[#4673e4] pb-2">
         Contact me
       </h1>
+      <p className="text-center py-1 text-stone-500 dark:text-stone-400">
+        Provided by{' '}
+        <a href="https://herotofu.com/" className="hover:underline">
+          HeroTofu
+        </a>
+      </p>
       <form action={env[0].link} method="POST" className="dark:text-gray-300">
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
