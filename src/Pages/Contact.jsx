@@ -63,7 +63,10 @@ const Contact = () => {
             className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-600 dark:bg-gray-700"
           ></textarea>
         </div>
-        <Button className="bg-[#001b5e] dark:bg-[#4673e4] text-gray-300 mt-4 w-full p-4 uppercase font-extrabold">
+        <Button
+          type="submit"
+          className="bg-[#001b5e] dark:bg-[#4673e4] text-gray-300 mt-4 w-full p-4 uppercase font-extrabold"
+        >
           Send Message
         </Button>
         <div
