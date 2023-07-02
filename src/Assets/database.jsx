@@ -1,18 +1,18 @@
 // icon imports
 import {
-  FaTwitter,
-  FaGithub,
-  FaLinkedinIn,
-  FaInstagram,
-  FaMastodon,
-} from 'react-icons/fa';
+  SiTwitter,
+  SiGithub,
+  SiLinkedin,
+  SiInstagram,
+  SiMastodon,
+} from 'react-icons/si';
 import {
   AiOutlineHome,
   AiOutlineProject,
   AiOutlineMail,
   AiOutlineStock,
+  AiOutlineUser,
 } from 'react-icons/ai';
-import { BsPerson } from 'react-icons/bs';
 
 // JSON Database
 export const db = {
@@ -44,27 +44,27 @@ export const db = {
     {
       title: 'Twitter',
       link: 'https://twitter.com/gelbphoenix',
-      icon: <FaTwitter size={20} />,
+      icon: <SiTwitter size={20} />,
     },
     {
       title: 'Instagram',
       link: 'https://instagram.com/gelbphoenix',
-      icon: <FaInstagram size={20} />,
+      icon: <SiInstagram size={20} />,
     },
     {
       title: 'Mastodon',
       link: 'mastodon.social/@gelbphoenix',
-      icon: <FaMastodon size={20} />,
+      icon: <SiMastodon size={20} />,
     },
     {
       title: 'LinkedIn',
       link: 'https://linkedin.com/in/gelbphoenix/',
-      icon: <FaLinkedinIn size={20} />,
+      icon: <SiLinkedin size={20} />,
     },
     {
       title: 'Github',
       link: 'https://github.com/gelbphoenix',
-      icon: <FaGithub size={20} />,
+      icon: <SiGithub size={20} />,
     },
   ],
   sites: [
@@ -86,7 +86,7 @@ export const db = {
     {
       title: 'About',
       link: '#about',
-      icon: <BsPerson size={20} />,
+      icon: <AiOutlineUser size={20} />,
     },
     {
       title: 'Contact',

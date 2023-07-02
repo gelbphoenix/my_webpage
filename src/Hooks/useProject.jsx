@@ -6,7 +6,7 @@ const useProject = () => {
   const userName = new URL(db.profiles[4].link).pathname;
 
   return useQuery({
-    queryKey: [''],
+    queryKey: ['projects'],
     queryFn: async () => {
       const { data } = await axios.get(
         `https://api.github.com/users${userName}/repos`
