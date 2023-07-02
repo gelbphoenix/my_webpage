@@ -1,6 +1,9 @@
 import { Button } from 'flowbite-react';
+import { db } from '../Assets/database';
 
 const Contact = () => {
+  const { env } = db;
+
   return (
     <div
       id="contact"
@@ -9,13 +12,7 @@ const Contact = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e] dark:text-[#4673e4] pb-2">
         Contact me
       </h1>
-      {/* add action */}
-      <form
-        action=""
-        method="POST"
-        encType="multipart/form-data"
-        className="dark:text-gray-300"
-      >
+      <form action={env[0].link} method="POST" className="dark:text-gray-300">
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2">First Name</label>
@@ -69,6 +66,12 @@ const Contact = () => {
         <Button className="bg-[#001b5e] dark:bg-[#4673e4] text-gray-300 mt-4 w-full p-4 uppercase font-extrabold">
           Send Message
         </Button>
+        <div
+          className="overflow-hidden whitespace-nowrap indent-[-99999px] absolute"
+          aria-hidden="true"
+        >
+          <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+        </div>
       </form>
     </div>
   );

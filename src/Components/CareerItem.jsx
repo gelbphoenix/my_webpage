@@ -11,11 +11,13 @@ const CareerItem = ({ year, title, duration, details }) => {
             <span className="text-lg font-semibold text-[#001b5e] dark:text-[#1d3de0]">
               {title}
             </span>
-            <span className="my-1 text-sm font-normal leading-none text-stone-500">
+            <span className="my-1 text-sm font-medium leading-none text-stone-500 dark:text-stone-400">
               {duration}
             </span>
           </p>
-          <p className="my-2 text-base font-normal text-stone-400">{details}</p>
+          <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
+            {details}
+          </p>
         </li>
       </ol>
     </>
