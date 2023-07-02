@@ -7,7 +7,7 @@ const ProjectItem = ({ title, link }) => {
         <img
           src={`https://raw.githubusercontent.com/${title}/main/public/picture.webp`}
           alt={title}
-          className="rounded-xl group-hover:opacity-10 aspect-square object-cover object-left"
+          className="rounded-xl group-hover:opacity-10 ease-in duration-150 aspect-square object-cover object-left"
         />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <h3 className="text-2xl font-bold text-white tracking-wider text-center">
