@@ -18,7 +18,7 @@ import {
 export const db = {
   about: [
     {
-      text: 'Phoenix Paulina Schmid is a dedicated and talented student web developer with a passion for creating innovative digital solutions. With a strong background in programming languages such as HTML, CSS, and JavaScript, Paulina is constantly expanding her skills and staying up-to-date with the latest trends and technologies in the field. Her relentless curiosity and problem-solving mindset drive her to tackle complex challenges and deliver efficient and user-friendly websites.',
+      text: 'Phoenix Paulina Schmid is a dedicated and talented student web developer based in Germany with a passion for creating innovative digital solutions. With a strong background in programming languages such as HTML, CSS, and JavaScript, Paulina is constantly expanding her skills and staying up-to-date with the latest trends and technologies in the field. Her relentless curiosity and problem-solving mindset drive her to tackle complex challenges and deliver efficient and user-friendly websites.',
     },
     {
       text: 'Driven by her desire to combine functionality with aesthetics, Paulina strives to create visually appealing designs that enhance the user experience. She possesses a keen eye for detail and a natural instinct for intuitive navigation, ensuring that her projects not only meet technical requirements but also exceed expectations in terms of design and usability. Paulina`s commitment to continuous learning and her ability to adapt to new tools and frameworks make her a valuable asset in the ever-evolving world of web development. With a strong work ethic and a genuine enthusiasm for her craft, Paulina is poised to make a significant impact in the field of web development.',
