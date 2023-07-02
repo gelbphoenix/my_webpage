@@ -1,5 +1,5 @@
 import { db } from '../Assets/database';
-import AboutItem from '../Components/AboutItem';
+import CareerItem from '../Components/CareerItem';
 
 const Career = () => {
   const { career } = db;
@@ -14,7 +14,7 @@ const Career = () => {
           My Career
         </h1>
         {career.map((item, index) => (
-          <AboutItem
+          <CareerItem
             key={index}
             details={item.details}
             duration={item.duration}

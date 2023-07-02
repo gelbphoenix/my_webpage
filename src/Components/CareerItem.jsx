@@ -1,4 +1,4 @@
-const AboutItem = ({ year, title, duration, details }) => {
+const CareerItem = ({ year, title, duration, details }) => {
   return (
     <>
       <ol className="flex flex-col md:flex-row relative border-l border-stone-300">
@@ -11,7 +11,7 @@ const AboutItem = ({ year, title, duration, details }) => {
             <span className="text-lg font-semibold text-[#001b5e] dark:text-[#1d3de0]">
               {title}
             </span>
-            <span className="my-1 text-sm font-normal leading-none text-stone-400">
+            <span className="my-1 text-sm font-normal leading-none text-stone-500">
               {duration}
             </span>
           </p>
@@ -22,4 +22,4 @@ const AboutItem = ({ year, title, duration, details }) => {
   );
 };
 
-export default AboutItem;
+export default CareerItem;
