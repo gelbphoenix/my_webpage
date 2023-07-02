@@ -10,7 +10,7 @@ const ProjectItem = ({ title, link }) => {
           className="rounded-xl group-hover:opacity-10 ease-in duration-150 aspect-square object-cover object-left"
         />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <h3 className="sm:text-base text-2xl font-bold text-white tracking-wider text-center">
+          <h3 className="sm:text-2xl text-base font-bold text-white tracking-wider text-center">
             {title}
           </h3>
           <Button
