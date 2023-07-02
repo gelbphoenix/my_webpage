@@ -24,20 +24,6 @@ export const db = {
       details:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque accusantium nam aliquid, eos voluptatem exercitationem iste ab similique ullam.',
     },
-    {
-      year: 2022,
-      title: 'Test',
-      duration: 'x Years',
-      details:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque accusantium nam aliquid, eos voluptatem exercitationem iste ab similique ullam.',
-    },
-    {
-      year: 2021,
-      title: 'Test',
-      duration: 'x Years',
-      details:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque accusantium nam aliquid, eos voluptatem exercitationem iste ab similique ullam.',
-    },
   ],
   profiles: [
     {

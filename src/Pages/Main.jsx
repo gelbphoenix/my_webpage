@@ -1,6 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import Profile from '../Components/Profile';
 import { db } from '../Assets/database';
+import { Button } from 'flowbite-react';
 
 const Main = () => {
   const { profiles } = db;
@@ -27,9 +28,7 @@ const Main = () => {
               style={{ fontSize: '1em', paddingLeft: '5px' }}
             />
           </h2>
-          <div
-            className={`flex justify-between pt-6 max-w-[350px] w-full items-center`}
-          >
+          <div className="flex justify-between pt-6 max-w-[350px] w-full items-center">
             {profiles.map((profile, index) => (
               <Profile
                 icon={profile.icon}
@@ -38,6 +37,22 @@ const Main = () => {
                 key={index}
               />
             ))}
+          </div>
+          <div className="w-full max-w-[350px] pt-2 flex justify-between items-center">
+            <Button
+              as="a"
+              href="#contact"
+              className="rounded-full shadow-lg text-black dark:text-white bg-gray-200 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 font-bold uppercase"
+            >
+              Contact me
+            </Button>
+            <Button
+              as="a"
+              href="#projects"
+              className="rounded-full shadow-lg text-black dark:text-white bg-slate-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 font-bold"
+            >
+              My Projects
+            </Button>
           </div>
         </div>
       </div>
