@@ -1,8 +1,8 @@
-import { db } from '../Assets/database';
 import ProjectItem from '../Components/ProjectItem';
+import useProject from '../Hooks/useProject';
 
 const Projects = () => {
-  const { projects } = db;
+  const { data: projects } = useProject();
 
   return (
     <>
@@ -20,13 +20,11 @@ const Projects = () => {
           deleniti quaerat adipisci minima asperiores?
         </p>
         <div className=" grid sm:grid-cols-2 gap-12">
-          {projects.map((project, index) => (
+          {projects?.map(project => (
             <ProjectItem
-              key={index}
-              title={project.title}
-              img={project.img}
-              tech={project.tech}
-              link={project.link}
+              key={project.id}
+              link={project.html_link}
+              title={project.full_name}
             />
           ))}
         </div>
