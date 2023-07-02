@@ -58,7 +58,7 @@ export const db = {
     },
     {
       title: 'Mastodon',
-      link: 'mastodon.social/@gelbphoenix',
+      link: 'https://mastodon.social/@gelbphoenix',
       icon: <SiMastodon size={20} />,
     },
     {
