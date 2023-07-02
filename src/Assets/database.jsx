@@ -1,6 +1,17 @@
 // icon imports
-import { FaTwitter, FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
+import {
+  FaTwitter,
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram,
+  FaMastodon,
+} from 'react-icons/fa';
+import {
+  AiOutlineHome,
+  AiOutlineProject,
+  AiOutlineMail,
+  AiOutlineStock,
+} from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 
 // image imports
@@ -8,15 +19,7 @@ import portfolioImg from './portfolio.webp';
 
 // JSON Database
 export const db = {
-  projects: [
-    {
-      title: 'This Portfolio',
-      img: portfolioImg,
-      tech: 'ReactJS, Vite, TailwindCSS',
-      link: 'https://github.com/gelbphoenix/my_webpage',
-    },
-  ],
-  about: [
+  career: [
     {
       year: 2023,
       title: 'Test',
@@ -37,6 +40,11 @@ export const db = {
       icon: <FaInstagram size={20} />,
     },
     {
+      title: 'Mastodon',
+      link: 'mastodon.social/@gelbphoenix',
+      icon: <FaMastodon size={20} />,
+    },
+    {
       title: 'LinkedIn',
       link: 'https://linkedin.com/in/gelbphoenix/',
       icon: <FaLinkedinIn size={20} />,
@@ -47,6 +55,14 @@ export const db = {
       icon: <FaGithub size={20} />,
     },
   ],
+  projects: [
+    {
+      title: 'This Portfolio',
+      img: portfolioImg,
+      tech: 'ReactJS, Vite, TailwindCSS',
+      link: 'https://github.com/gelbphoenix/my_webpage',
+    },
+  ],
   sites: [
     {
       title: 'Home',
@@ -54,14 +70,19 @@ export const db = {
       icon: <AiOutlineHome size={20} />,
     },
     {
-      title: 'About',
-      link: '#about',
-      icon: <BsPerson size={20} />,
+      title: 'Career',
+      link: '#career',
+      icon: <AiOutlineStock size={20} />,
     },
     {
       title: 'Projects',
       link: '#projects',
       icon: <AiOutlineProject size={20} />,
+    },
+    {
+      title: 'About',
+      link: '#about',
+      icon: <BsPerson size={20} />,
     },
     {
       title: 'Contact',

@@ -21,14 +21,23 @@ const Main = () => {
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800 dark:text-gray-300">
             I`m a
             <TypeAnimation
-              sequence={['Developer', 1500, 'Coder', 1500, 'Lerner', 1500]}
+              sequence={[
+                'Developer',
+                1500,
+                'Coder',
+                1500,
+                'Lerner',
+                1500,
+                'Creator',
+                1500,
+              ]}
               wrapper="div"
               cursor={true}
               repeat={Infinity}
-              style={{ fontSize: '1em', paddingLeft: '5px' }}
+              className="sm:text-3xl text-2xl pl-[5px]"
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[350px] w-full items-center">
+          <div className="flex justify-between pt-6 max-w-[400px] w-full items-center">
             {profiles.map((profile, index) => (
               <Profile
                 icon={profile.icon}
@@ -42,7 +51,7 @@ const Main = () => {
             <Button
               as="a"
               href="#contact"
-              className="rounded-full shadow-lg text-black dark:text-white bg-gray-200 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 font-bold uppercase"
+              className="rounded-full shadow-lg text-black dark:text-white bg-gray-200 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 font-extrabold uppercase"
             >
               Contact me
             </Button>
