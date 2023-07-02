@@ -1,5 +1,5 @@
 # my_webpage
 
-# Pictures
+## Pictures
 
 ![Webpage](src/Assets/portfolio.webp)
