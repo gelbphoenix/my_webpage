@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'flowbite';
 import App from './App';
-import './index.css';
+import './Styles/index.css';
 import ThemeProvider from './Context/ThemeContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
