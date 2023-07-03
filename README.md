@@ -2,9 +2,9 @@
 
 ## Technologies
 
--Vite
---ReactJS
--TailwindCSS
+- Vite
+  -- ReactJS
+- TailwindCSS
 
 ## Pictures
 
