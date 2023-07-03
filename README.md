@@ -5,6 +5,7 @@
 - Vite
   -- ReactJS
 - TailwindCSS
+- axios
 
 ## Pictures
 
