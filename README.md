@@ -3,7 +3,7 @@
 ## Technologies
 
 -Vite
--ReactJS
+.-ReactJS
 -TailwindCSS
 
 ## Pictures
