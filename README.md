@@ -1,4 +1,10 @@
-# my_webpage
+# gelbphoenix.de - My portfolio webpage
+
+## Technologies
+
+-Vite
+-ReactJS
+-TailwindCSS
 
 ## Pictures
 
