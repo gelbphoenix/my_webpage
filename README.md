@@ -3,8 +3,10 @@
 ## Technologies
 
 - Vite
-  -- ReactJS
-- TailwindCSS
+  - ReactJS
+    - react-query (tanstack)
+  - TailwindCSS
+    - flowbite
 - axios
 
 ## Pictures
