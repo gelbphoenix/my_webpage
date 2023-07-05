@@ -75,7 +75,7 @@ export const db = {
   sites: [
     {
       title: 'Home',
-      link: '#main',
+      link: '#',
       icon: <AiOutlineHome size={20} />,
     },
     {

@@ -2,12 +2,13 @@ import { TypeAnimation } from 'react-type-animation';
 import { MobileProfile } from '../Components/ProfileButton/';
 import { db } from '../Assets/database';
 import { Button } from 'flowbite-react';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 const Main = () => {
   const { profiles } = db;
 
   return (
-    <div id="main">
+    <>
       <img
         src="https://images.unsplash.com/photo-1687704841026-f8fff04d0b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
         alt=""
@@ -47,25 +48,32 @@ const Main = () => {
               />
             ))}
           </div>
-          <div className="w-full max-w-[350px] pt-2 flex justify-between items-center">
+          <div className="lg:max-w-[612px] max-w-[400px] w-full pt-2 flex justify-between items-center">
             <Button
               as="a"
               href="#contact"
-              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 font-extrabold uppercase"
+              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 font-extrabold uppercase"
             >
               Contact me
             </Button>
             <Button
               as="a"
               href="#projects"
-              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-stone-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 font-normal"
+              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-stone-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 dark:hover:bg-slate-800 font-normal"
             >
               My Projects
             </Button>
           </div>
+          <Button
+            as="a"
+            href="#about"
+            className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 absolute bottom-10 self-center"
+          >
+            <AiFillCaretDown size={20} />
+          </Button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
