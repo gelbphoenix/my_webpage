@@ -7,7 +7,7 @@ import Projects from './Pages/Projects';
 
 const App = () => {
   return (
-    <div className="dark:bg-gray-700">
+    <div className="dark:bg-gray-900">
       <Header />
       <Main />
       <About />

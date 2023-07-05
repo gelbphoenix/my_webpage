@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="max-w-[1040px] lg:max-w-[1100px] m-auto md:px-20 p-4 py-16 dark:bg-gray-700"
+        className="max-w-[1040px] lg:max-w-[1100px] m-auto md:px-20 p-4 py-16 dark:bg-gray-900"
       >
         <h1 className="text-4xl font-bold text-center text-[#001b5e] dark:text-[#4673e4] pb-2">
           About me

@@ -37,7 +37,7 @@ export const db = {
       title: 'Member of the Board of JuLis Ostwestfalen-Lippe',
       duration: '1.16 Years',
       details:
-        'As an assessor on the district board of the Young Liberals (JuLis) in Ostwestfalen-Lippe, I was responsible for maintaining the website of the district association.',
+        'As an member on the board of the Young Liberals (JuLis) in Ostwestfalen-Lippe, I was responsible for maintaining the website of the district association.',
     },
   ],
   env: [
