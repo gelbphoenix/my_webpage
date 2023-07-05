@@ -10,9 +10,9 @@ const App = () => {
     <div className="dark:bg-gray-700">
       <Header />
       <Main />
+      <About />
       <Career />
       <Projects />
-      <About />
       <Contact />
     </div>
   );

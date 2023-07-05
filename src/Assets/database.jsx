@@ -79,6 +79,11 @@ export const db = {
       icon: <AiOutlineHome size={20} />,
     },
     {
+      title: 'About',
+      link: '#about',
+      icon: <AiOutlineUser size={20} />,
+    },
+    {
       title: 'Career',
       link: '#career',
       icon: <AiOutlineStock size={20} />,
@@ -87,11 +92,6 @@ export const db = {
       title: 'Projects',
       link: '#projects',
       icon: <AiOutlineProject size={20} />,
-    },
-    {
-      title: 'About',
-      link: '#about',
-      icon: <AiOutlineUser size={20} />,
     },
     {
       title: 'Contact',
