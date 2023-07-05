@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <AiOutlineMenu
         onClick={handleNav}
-        className="absolute top-4 right-4 z-[99] md:hidden dark:text-white"
+        className="fixed top-4 right-4 z-[99] md:hidden dark:text-white"
         size={25}
       />
 
