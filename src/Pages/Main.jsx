@@ -13,12 +13,12 @@ const Main = () => {
         alt=""
         className="w-full h-screen object-cover scale-x-[-1]"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/50 dark:bg-black/50">
+      <div className="w-full h-screen absolute top-0 left-0 bg-gray-300/50 dark:bg-black/50">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-300">
+          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200">
             I`m Phoenix Paulina Schmid
           </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800 dark:text-gray-300">
+          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800 dark:text-gray-200">
             I`m a
             <TypeAnimation
               sequence={[
@@ -51,14 +51,14 @@ const Main = () => {
             <Button
               as="a"
               href="#contact"
-              className="rounded-full shadow-lg text-black dark:text-white bg-gray-200 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 font-extrabold uppercase"
+              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 font-extrabold uppercase"
             >
               Contact me
             </Button>
             <Button
               as="a"
               href="#projects"
-              className="rounded-full shadow-lg text-black dark:text-white bg-slate-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 font-bold"
+              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-stone-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 font-normal"
             >
               My Projects
             </Button>
