@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
@@ -7,7 +8,12 @@ export default {
     './node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        mds: '680px',
+        mdl: '720px',
+      },
+    },
   },
   plugins: [require('flowbite/plugin')],
 };
