@@ -19,7 +19,7 @@ const Projects = () => {
           problem-solving approaches. I am continuously exploring new ideas and
           technologies to expand my skillset and deliver innovative solutions.
         </p>
-        <div className=" grid sm:grid-cols-2 gap-12">
+        <div className=" grid sm:grid-cols-3 gap-12">
           {projects?.map(project => {
             return (
               <ProjectItem
