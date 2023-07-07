@@ -38,7 +38,7 @@ const Main = () => {
               className="sm:text-3xl text-2xl pl-[5px]"
             />
           </h2>
-          <div className="md:hidden flex justify-between pt-6 max-w-[450px] w-full items-center">
+          <div className="md:hidden flex justify-evenly pt-6 max-w-[450px] w-full items-center flex-wrap">
             {profiles.map((profile, index) => (
               <MobileProfile
                 icon={profile.icon}
