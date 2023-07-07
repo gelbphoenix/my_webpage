@@ -44,31 +44,29 @@ export const db = {
     {
       link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
     },
+    {
+      username: 'gelbphoenix',
+    },
   ],
   profiles: [
     {
       title: 'Twitter',
-      link: 'https://twitter.com/gelbphoenix',
       icon: <SiTwitter size={20} />,
     },
     {
       title: 'Instagram',
-      link: 'https://instagram.com/gelbphoenix',
       icon: <SiInstagram size={20} />,
     },
     {
       title: 'Mastodon',
-      link: 'https://mastodon.social/@gelbphoenix',
       icon: <SiMastodon size={20} />,
     },
     {
       title: 'LinkedIn',
-      link: 'https://linkedin.com/in/gelbphoenix/',
       icon: <SiLinkedin size={20} />,
     },
     {
       title: 'Github',
-      link: 'https://github.com/gelbphoenix',
       icon: <SiGithub size={20} />,
     },
   ],

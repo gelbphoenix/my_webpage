@@ -3,13 +3,9 @@ import axios from 'axios';
 import { db } from '../Assets/database';
 
 const useProject = () => {
-  const githubUserName = new URL(
-    db.profiles.find(gh => gh.title === 'Github').link
-  ).href
-    .substring(0, 30)
-    .substring(18);
+  const githubUserName = db.env[1].username;
 
-  const url = `https://api.github.com/users${githubUserName}/repos`;
+  const url = `https://api.github.com/users/${githubUserName}/repos`;
 
   return useQuery({
     queryKey: ['projects'],
