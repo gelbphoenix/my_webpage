@@ -5,9 +5,11 @@ import { db } from '../Assets/database';
 const useProject = () => {
   const githubUserName = new URL(
     db.profiles.find(gh => gh.title === 'Github').link
-  ).pathname.substring(1);
+  ).href
+    .substring(0, 30)
+    .substring(18);
 
-  const url = `https://api.github.com/users/${githubUserName}/repos`;
+  const url = `https://api.github.com/users${githubUserName}/repos`;
 
   return useQuery({
     queryKey: ['projects'],
