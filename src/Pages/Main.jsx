@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { MobileProfile } from '../Components/ProfileButton/';
 import { db } from '../Assets/database';
 import { Button } from 'flowbite-react';
-import { AiFillCaretDown } from 'react-icons/ai';
+import { FaChevronDown } from 'react-icons/fa';
 
 const Main = () => {
   const { profiles } = db;
@@ -38,7 +38,7 @@ const Main = () => {
               className="sm:text-3xl text-2xl pl-[5px]"
             />
           </h2>
-          <div className="md:hidden flex justify-between pt-6 max-w-[400px] w-full items-center">
+          <div className="md:hidden flex justify-between pt-6 max-w-[450px] w-full items-center">
             {profiles.map((profile, index) => (
               <MobileProfile
                 icon={profile.icon}
@@ -69,7 +69,7 @@ const Main = () => {
             href="#about"
             className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 absolute bottom-10 self-center"
           >
-            <AiFillCaretDown size={20} />
+            <FaChevronDown size={20} />
           </Button>
         </div>
       </div>

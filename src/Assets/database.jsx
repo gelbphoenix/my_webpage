@@ -1,18 +1,19 @@
 // icon imports
 import {
-  SiTwitter,
-  SiGithub,
-  SiLinkedin,
-  SiInstagram,
-  SiMastodon,
-} from 'react-icons/si';
-import {
   AiOutlineHome,
   AiOutlineProject,
   AiOutlineMail,
   AiOutlineStock,
   AiOutlineUser,
 } from 'react-icons/ai';
+import {
+  SiTwitter,
+  SiGithub,
+  SiLinkedin,
+  SiInstagram,
+  SiMastodon,
+} from 'react-icons/si';
+import ThreadsInsta from '../Components/icons/ThreadsInsta';
 
 // JSON Database
 export const db = {
@@ -56,6 +57,10 @@ export const db = {
     {
       title: 'Instagram',
       icon: <SiInstagram size={20} />,
+    },
+    {
+      title: 'Threads',
+      icon: <ThreadsInsta size={20} />,
     },
     {
       title: 'Mastodon',
