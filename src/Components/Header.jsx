@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { DesktopMenuButton, MobileMenuButton } from './MenuButton';
 import { DesktopThemeButton, MobileThemeButton } from './ThemeButton';
 import { db } from '../Assets/database';
@@ -9,15 +9,14 @@ const Header = () => {
   const [nav, setNav] = useState(false);
   const { sites, profiles } = db;
 
-  const handleNav = () => setNav(!nav);
-
   return (
     <>
-      <AiOutlineMenu
-        onClick={handleNav}
-        className="fixed top-4 right-4 z-[99] md:hidden dark:text-white"
-        size={25}
-      />
+      <button
+        onClick={() => setNav(!nav)}
+        className="md:hidden fixed top-4 right-4 z-[99] dark:text-white"
+      >
+        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+      </button>
 
       {nav ? (
         <div className="fixed w-full h-screen bg-white/[0.55] dark:bg-black/[0.55] flex flex-col justify-center items-center z-20">
@@ -27,7 +26,7 @@ const Header = () => {
               icon={element.icon}
               link={element.link}
               key={index}
-              handleClick={handleNav}
+              handleClick={() => setNav(!nav)}
             />
           ))}
           <MobileThemeButton />
