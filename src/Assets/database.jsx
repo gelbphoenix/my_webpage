@@ -84,14 +84,14 @@ export const db = {
       icon: <AiOutlineUser size={20} />,
     },
     {
-      title: 'Career',
-      link: '#career',
-      icon: <AiOutlineStock size={20} />,
-    },
-    {
       title: 'Projects',
       link: '#projects',
       icon: <AiOutlineProject size={20} />,
+    },
+    {
+      title: 'Career',
+      link: '#career',
+      icon: <AiOutlineStock size={20} />,
     },
     {
       title: 'Contact',
