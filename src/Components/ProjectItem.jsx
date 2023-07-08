@@ -11,19 +11,20 @@ const ProjectItem = ({ title, link, page }) => {
           alt=""
           className="rounded-xl group-hover:opacity-10 ease-out duration-100 aspect-square object-cover object-left bg-gray-400 w-full"
         />
-        <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[75%]">
           <h3 className="mdl:text-1xl text-base font-bold text-white tracking-wider text-center truncate">
             {title}
           </h3>
-          <div className="flex gap-1">
+          <div className="flex gap-1 min-w- mt-2 justify-around">
             <Button
               as="a"
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className=" w-[50%] mt-2 bg-white dark:bg-gray-700 text-gray-700 dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-gray-600"
+              className="bg-white dark:bg-gray-700 text-gray-700 dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-gray-600"
             >
-              <AiOutlineInfoCircle size={20} className="mr-1" /> Repo
+              <AiOutlineInfoCircle size={20} className="mr-1" />{' '}
+              <span className="sm:block hidden">Repo</span>
             </Button>
             {page !== window.location.href.substring(0, 22) ? (
               <Button
@@ -31,9 +32,10 @@ const ProjectItem = ({ title, link, page }) => {
                 href={page}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" w-[50%] mt-2 bg-gray-400 dark:bg-gray-600 text-gray-700 dark:text-white font-bold hover:bg-gray-300 dark:hover:bg-gray-500"
+                className=" bg-gray-400 dark:bg-gray-600 text-gray-700 dark:text-white font-bold hover:bg-gray-300 dark:hover:bg-gray-500"
               >
-                <BiSolidShow size={20} className="mr-1" /> Demo
+                <BiSolidShow size={20} className="mr-1" />{' '}
+                <span className="sm:block hidden">Demo</span>
               </Button>
             ) : (
               ''
