@@ -24,8 +24,9 @@ const Projects = () => {
             return (
               <ProjectItem
                 key={project.id}
-                link={project.html_url}
                 title={project.full_name}
+                link={project.html_url}
+                page={project.homepage}
               />
             );
           })}
