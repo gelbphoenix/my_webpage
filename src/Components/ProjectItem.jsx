@@ -25,7 +25,7 @@ const ProjectItem = ({ title, link, page }) => {
             >
               <AiOutlineInfoCircle size={20} className="mr-1" /> Repo
             </Button>
-            {page !== window.location.href ? (
+            {page !== window.location.href.substring(0, 22) ? (
               <Button
                 as="a"
                 href={page}
