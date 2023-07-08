@@ -13,7 +13,7 @@ const Projects = () => {
         <h1 className="text-4xl font-bold text-center text-[#001b5e] dark:text-[#4673e4] pb-2">
           Projects
         </h1>
-        <p className="text-center py-8 text-stone-500 dark:text-stone-400">
+        <p className="text-center py-8 text-stone-500 dark:text-stone-300">
           These are just a few examples of the projects I have worked on. Each
           project has given me valuable insights into different technologies and
           problem-solving approaches. I am continuously exploring new ideas and

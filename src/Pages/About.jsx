@@ -14,7 +14,7 @@ const About = () => {
         </h1>
         {about.map((item, index) => (
           <p
-            className="text-center py-8 text-stone-500 dark:text-stone-400"
+            className="text-center py-8 text-stone-500 dark:text-stone-300"
             key={index}
           >
             {item.text}
