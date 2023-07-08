@@ -15,7 +15,7 @@ const CareerItem = ({ year, title, duration, details }) => {
               {duration}
             </span>
           </p>
-          <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-400">
+          <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-300">
             {details}
           </p>
         </li>
