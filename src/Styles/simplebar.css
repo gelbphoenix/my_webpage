@@ -1,3 +1,12 @@
-.simplebar-scrollbar::before {
-  background-color: rgb(214, 211, 209);
+.simplebar-scrollbar {
+  &::before {
+    @apply bg-stone-500 dark:bg-stone-300 overflow-hidden;
+  }
+}
+
+.simplebar-dragging {
+  pointer-events: all;
+  .simplebar-content {
+    pointer-events: all;
+  }
 }
