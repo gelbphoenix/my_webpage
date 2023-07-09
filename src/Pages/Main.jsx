@@ -11,7 +11,6 @@ const Main = () => {
     <>
       <img
         src="https://images.unsplash.com/photo-1687704841026-f8fff04d0b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-        alt=""
         className="w-full h-screen object-cover scale-x-[-1]"
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-gray-300/50 dark:bg-black/50">
