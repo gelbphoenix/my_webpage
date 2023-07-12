@@ -6,7 +6,7 @@ import {
   /*AiOutlineStock,*/
   AiOutlineUser,
 } from 'react-icons/ai';
-import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoTypescript, BiLogoReact, BiLogoNodejs } from 'react-icons/bi';
+import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoNodejs } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
 import {
   SiTwitter,
@@ -33,7 +33,7 @@ export const db = {
       title: 'Student developer',
       duration: '',
       details:
-        'I`ve been teaching myself to code since January 2023. I focus on web development with Javascript, TypeScript and NodeJS.',
+        'I`ve been teaching myself to code since January 2023. I focus on web development with Javascript, ReactJS and NodeJS.',
     },
     {
       year: 2019,
@@ -46,8 +46,6 @@ export const db = {
   env: [
     {
       link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
-    },
-    {
       username: 'gelbphoenix',
     },
   ],
@@ -124,11 +122,6 @@ export const db = {
       title: 'JS',
       title_long: 'JavaScript',
       icon: <BiLogoJavascript size={75} />
-    },
-    {
-      title: 'TS',
-      title_long: 'TypeScript',
-      icon: <BiLogoTypescript size={75} />,
     },
     {
       title: 'React',
