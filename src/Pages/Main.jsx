@@ -5,71 +5,73 @@ import { Button } from 'flowbite-react';
 import { FaChevronDown } from 'react-icons/fa';
 
 const Main = () => {
-  const { profiles } = db;
+  const { profiles, sites } = db;
 
   return (
     <>
-      <img
-        src="https://images.unsplash.com/photo-1687704841026-f8fff04d0b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-        className="w-full h-screen object-cover scale-x-[-1]"
-      />
-      <div className="w-full h-screen absolute top-0 left-0 bg-gray-300/50 dark:bg-black/50">
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200 md:max-w-full sm:max-w-[50dvw] max-w-[70dvw]">
-            I`m Phoenix Paulina Schmid
-          </h1>
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800 dark:text-gray-200">
-            I`m a
-            <TypeAnimation
-              sequence={[
-                'Developer',
-                1500,
-                'Coder',
-                1500,
-                'Lerner',
-                1500,
-                'Creator',
-                1500,
-              ]}
-              wrapper="div"
-              cursor={true}
-              repeat={Infinity}
-              className="sm:text-3xl text-2xl pl-[5px]"
-            />
-          </h2>
-          <div className="md:hidden flex justify-evenly pt-6 max-w-[450px] w-full items-center flex-wrap">
-            {profiles.map((profile, index) => (
-              <MobileProfile
-                icon={profile.icon}
-                link={profile.link}
-                title={profile.title}
-                key={index}
+      <div id='home'>
+        <img
+          src="https://images.unsplash.com/photo-1687704841026-f8fff04d0b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
+          className="w-full h-screen object-cover scale-x-[-1]"
+        />
+        <div className="w-full h-screen absolute top-0 left-0 bg-gray-300/50 dark:bg-black/50">
+          <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+            <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200 md:max-w-full sm:max-w-[50dvw] max-w-[70dvw]">
+              I`m Phoenix Paulina Schmid
+            </h1>
+            <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-800 dark:text-gray-200">
+              I`m a
+              <TypeAnimation
+                sequence={[
+                  'Developer',
+                  1500,
+                  'Coder',
+                  1500,
+                  'Lerner',
+                  1500,
+                  'Creator',
+                  1500,
+                ]}
+                wrapper="div"
+                cursor={true}
+                repeat={Infinity}
+                className="sm:text-3xl text-2xl pl-[5px]"
               />
-            ))}
-          </div>
-          <div className="lg:max-w-[612px] max-w-[400px] w-full pt-2 flex justify-between items-center">
+            </h2>
+            <div className="md:hidden flex justify-evenly pt-6 max-w-[450px] w-full items-center flex-wrap">
+              {profiles.map((profile, index) => (
+                <MobileProfile
+                  icon={profile.icon}
+                  link={profile.link}
+                  title={profile.title}
+                  key={index}
+                />
+              ))}
+            </div>
+            <div className="lg:max-w-[612px] max-w-[400px] w-full pt-2 flex justify-between items-center">
+              <Button
+                as="a"
+                href="#contact"
+                className="rounded-full shadow-lg text-stone-200 dark:text-black bg-[#001b5e] dark:bg-[#4673e4] shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-[#001b7c] dark:hover:bg-[#4674c6] font-extrabold uppercase"
+              >
+                Contact me
+              </Button>
+              <Button
+                as="a"
+                href="#projects"
+                className="rounded-full shadow-lg text-black dark:text-stone-200 bg-stone-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 dark:hover:bg-slate-800 font-normal"
+              >
+                My Projects
+              </Button>
+            </div>
             <Button
               as="a"
-              href="#contact"
-              className="rounded-full shadow-lg text-stone-200 dark:text-black bg-[#001b5e] dark:bg-[#4673e4] shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-[#001b7c] dark:hover:bg-[#4674c6] font-extrabold uppercase"
+              href={sites[1].link}
+              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 absolute bottom-10 self-center"
             >
-              Contact me
-            </Button>
-            <Button
-              as="a"
-              href="#projects"
-              className="rounded-full shadow-lg text-black dark:text-stone-200 bg-stone-300 dark:bg-slate-900 shadow-gray-400 dark:shadow-gray-600 m-2 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-slate-400 dark:hover:bg-slate-800 font-normal"
-            >
-              My Projects
+              <FaChevronDown size={20} />
             </Button>
           </div>
-          <Button
-            as="a"
-            href="#about"
-            className="rounded-full shadow-lg text-black dark:text-stone-200 bg-gray-300 dark:bg-gray-900 shadow-gray-400 dark:shadow-gray-600 m-2 p-1 cursor-pointer hover:scale-110 ease-in duration-200 hover:bg-gray-300 dark:hover:bg-gray-800 absolute bottom-10 self-center"
-          >
-            <FaChevronDown size={20} />
-          </Button>
         </div>
       </div>
     </>

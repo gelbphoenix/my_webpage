@@ -3,9 +3,11 @@ import {
   AiOutlineHome,
   AiOutlineProject,
   AiOutlineMail,
-  AiOutlineStock,
+  /*AiOutlineStock,*/
   AiOutlineUser,
 } from 'react-icons/ai';
+import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoTypescript, BiLogoReact, BiLogoNodejs } from 'react-icons/bi';
+import { BsCodeSlash } from 'react-icons/bs';
 import {
   SiTwitter,
   SiGithub,
@@ -78,13 +80,13 @@ export const db = {
   sites: [
     {
       title: 'Home',
-      link: '#',
+      link: '#home',
       icon: <AiOutlineHome size={20} />,
     },
     {
-      title: 'About',
-      link: '#about',
-      icon: <AiOutlineUser size={20} />,
+      title: 'Stack',
+      link: '#techstack',
+      icon: <BsCodeSlash size={20} />
     },
     {
       title: 'Projects',
@@ -92,14 +94,51 @@ export const db = {
       icon: <AiOutlineProject size={20} />,
     },
     {
+      title: 'About',
+      link: '#about',
+      icon: <AiOutlineUser size={20} />,
+    },
+    /*{
       title: 'Career',
       link: '#career',
       icon: <AiOutlineStock size={20} />,
-    },
+    },*/  
     {
       title: 'Contact',
       link: '#contact',
       icon: <AiOutlineMail size={20} />,
     },
   ],
+  techStack: [
+    {
+      title: 'HTML',
+      title_long: 'HyperText Markup Language',
+      icon: <BiLogoHtml5 size={75} />
+    },
+    {
+      title: 'CSS',
+      title_long: 'Cascading Style Sheets',
+      icon: <BiLogoCss3 size={75} />
+    },
+    {
+      title: 'JS',
+      title_long: 'JavaScript',
+      icon: <BiLogoJavascript size={75} />
+    },
+    {
+      title: 'TS',
+      title_long: 'TypeScript',
+      icon: <BiLogoTypescript size={75} />,
+    },
+    {
+      title: 'React',
+      title_long: 'ReactJS',
+      icon: <BiLogoReact size={75} />
+    },
+    {
+      title: 'Node',
+      title_long: 'NodeJS',
+      icon: <BiLogoNodejs size={75} />
+    }
+  ]
 };
