@@ -1,8 +1,8 @@
-import {db} from "../Assets/database"
-import TechStackItem from "../Components/TechStackItem"
+import { db } from "Assets/database"
+import TechStackItem from "Components/TechStackItem"
 
 const TechStack = () => {
-  const {techStack} = db
+  const { techStack } = db
 
   return (
     <>

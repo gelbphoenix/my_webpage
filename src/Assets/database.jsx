@@ -15,7 +15,7 @@ import {
   SiInstagram,
   SiMastodon,
 } from 'react-icons/si';
-import ThreadsInsta from '../Components/icons/ThreadsInsta';
+import ThreadsInsta from 'Components/icons/ThreadsInsta';
 
 // JSON Database
 export const db = {

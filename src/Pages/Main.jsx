@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
-import { MobileProfile } from '../Components/ProfileButton/';
-import { db } from '../Assets/database';
+import { MobileProfile } from 'Components/ProfileButton/';
+import { db } from 'Assets/database';
 import { Button } from 'flowbite-react';
 import { FaChevronDown } from 'react-icons/fa';
 

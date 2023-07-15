@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { DesktopMenuButton, MobileMenuButton } from './MenuButton';
-import { DesktopThemeButton, MobileThemeButton } from './ThemeButton';
-import { db } from '../Assets/database';
-import { DesktopProfile } from './ProfileButton';
+import { db } from 'Assets/database';
+import { DesktopMenuButton, MobileMenuButton } from 'Components/MenuButton';
+import { DesktopThemeButton, MobileThemeButton } from 'Components/ThemeButton';
+import { DesktopProfile } from 'Components/ProfileButton';
 
 const Header = () => {
   const [nav, setNav] = useState(false);

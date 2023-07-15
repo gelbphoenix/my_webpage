@@ -1,5 +1,5 @@
-import ProjectItem from '../Components/ProjectItem';
-import useProject from '../Hooks/useProject';
+import ProjectItem from 'Components/ProjectItem';
+import useProject from 'Hooks/useProject';
 
 const Projects = () => {
   const { data: projects } = useProject();

@@ -1,5 +1,5 @@
 import { createContext, useEffect } from 'react';
-import useStorage from '../Hooks/useStorage';
+import useStorage from 'Hooks/useStorage';
 
 export const ThemeContext = createContext('');
 

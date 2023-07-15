@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ThemeContext } from '../../Context/ThemeContext';
+import { ThemeContext } from 'Contexts/ThemeContext';
 import { Button } from 'flowbite-react';
 import { BsMoonFill, BsSun } from 'react-icons/bs';
 

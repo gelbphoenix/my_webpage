@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { db } from '../Assets/database';
+import { db } from 'Assets/database';
 
 const useProject = () => {
   const githubUserName = db.env[0].username;

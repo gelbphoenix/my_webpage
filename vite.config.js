@@ -4,5 +4,16 @@ import svgt from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': '/src',
+      'Assets': '/src/Assets',
+      'Components': '/src/Components',
+      'Contexts': '/src/Context',
+      'Hooks': '/src/Hooks',
+      'Pages': '/src/Pages',
+      'Styles': '/src/Styles',
+    },
+  },
   plugins: [svgt(), react()],
 })

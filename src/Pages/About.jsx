@@ -1,4 +1,4 @@
-import { db } from '../Assets/database';
+import { db } from 'Assets/database';
 
 const About = () => {
   const { about } = db;

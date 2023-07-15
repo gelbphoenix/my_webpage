@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import { Button, Tooltip } from 'flowbite-react';
-import { ThemeContext } from '../../Context/ThemeContext';
+import { ThemeContext } from 'Contexts/ThemeContext';
 
 const DesktopThemeButton = () => {
   const { theme, handleThemeChange } = useContext(ThemeContext);

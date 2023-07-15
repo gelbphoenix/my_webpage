@@ -1,5 +1,5 @@
-import { db } from '../Assets/database';
-import CareerItem from '../Components/CareerItem';
+import { db } from 'Assets/database';
+import CareerItem from 'Components/CareerItem';
 
 const Career = () => {
   const { career } = db;

@@ -1,5 +1,5 @@
 import { Button } from 'flowbite-react';
-import { db } from '../Assets/database';
+import { db } from 'Assets/database';
 
 const Contact = () => {
   const { env } = db;

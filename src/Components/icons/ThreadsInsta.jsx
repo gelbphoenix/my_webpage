@@ -1,4 +1,4 @@
-import { ReactComponent as ThreadsLogo } from '../../Assets/threads.svg';
+import { ReactComponent as ThreadsLogo } from 'Assets/threads.svg';
 
 const ThreadsInsta = ({ size }) => {
   return (
