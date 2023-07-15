@@ -5,10 +5,14 @@ const Footer = () => {
   return (
     <>
         <div className="grid grid-cols-3 gap-2 pb-2 text-sm">
-          <section className="flex lg:flex-row flex-col justify-center items-start content-center flex-wrap text-gray-500 dark:text-gray-300">
+          <section className="flex lg:flex-row flex-col justify-center items-start content-center flex-wrap text-gray-500 dark:text-gray-300 ml-3.5">
             &copy; {new Date().getFullYear() !== 2023 ? `2023 - ${new Date().getFullYear()}` : new Date().getFullYear()}
-            <span className="font-bold lg:ml-1 flex flex-row">
-               Made with<p className="text-red-600 lg:mx-1 mx-0.5">{'<3'}</p>by Phoenix Paulina Schmid
+            <span className="font-bold lg:ml-1 flex flex-row flex-wrap">
+              Made with
+              <p className="text-red-600 sm:mx-1 ml-1">
+                {'<3'}
+              </p>
+              by Phoenix Paulina Schmid
             </span>
           </section>
           <section className="flex lg:flex-row flex-col justify-center items-center flex-wrap text-gray-500 dark:text-gray-300">
@@ -18,7 +22,7 @@ const Footer = () => {
               </Button>
             </Tooltip>
           </section>
-          <section className="flex lg:flex-row flex-col flex-wrap justify-between items-end content-center text-gray-500 dark:text-gray-300">
+          <section className="flex lg:flex-row flex-col flex-wrap justify-around items-end content-center text-gray-500 dark:text-gray-300">
             <a
               href="#"
               className="hover:underline"
