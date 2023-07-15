@@ -13,7 +13,7 @@ const TechStack = () => {
         <h1 className="text-4xl font-bold text-center text-[#001b5e] dark:text-[#4673e4] pb-2">
           Tech Stack
         </h1>
-        <div className="flex flex-wrap pt-4 [&>*]:flex-[1_1_9rem]">
+        <div className="flex flex-wrap pt-4">
           {techStack.map((item, index) => (
             <TechStackItem
               key={index}
