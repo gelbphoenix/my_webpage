@@ -2,12 +2,15 @@
 
 ## Technologies
 
-- Vite
-  - ReactJS
-    - react-query (tanstack)
-  - TailwindCSS
-    - flowbite
-  - axios
+```bash
+NodeJS
+├── Vite
+│   ├── ReactJS
+│   │   ╰─── react-query(tanstack)
+│   ╰─── TailwindCSS
+│       ╰─── flowbite
+╰── axios
+```
 
 ## View it locally
 
