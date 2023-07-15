@@ -130,7 +130,7 @@ export const db = {
     },
     {
       title: 'Node',
-      title_long: 'NodeJS',
+      title_long: 'Node.js',
       icon: <BiLogoNodejs size={75} color='#026e00' />
     }
   ]
