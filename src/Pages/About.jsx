@@ -5,7 +5,7 @@ const About = () => {
 
   return (
     <>
-      <div
+      <section
         id="about"
         className="xl:max-w-[1200px] lg:max-w-[1100px] max-w-[1040px] md:m-auto mr-6 md:px-20 p-4 py-16 dark:bg-gray-900"
       >
@@ -20,7 +20,7 @@ const About = () => {
             {item.text}
           </p>
         ))}
-      </div>
+      </section>
     </>
   );
 };
