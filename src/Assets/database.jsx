@@ -6,7 +6,13 @@ import {
   /*AiOutlineStock,*/
   AiOutlineUser,
 } from 'react-icons/ai';
-import { BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoNodejs } from 'react-icons/bi';
+import {
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoReact,
+  BiLogoNodejs,
+} from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
 import {
   SiTwitter,
@@ -15,7 +21,6 @@ import {
   SiInstagram,
   SiMastodon,
 } from 'react-icons/si';
-import ThreadsInsta from 'Components/icons/ThreadsInsta';
 
 // JSON Database
 export const db = {
@@ -59,10 +64,6 @@ export const db = {
       icon: <SiInstagram size={20} />,
     },
     {
-      title: 'Threads',
-      icon: <ThreadsInsta size={20} />,
-    },
-    {
       title: 'Mastodon',
       icon: <SiMastodon size={20} />,
     },
@@ -84,7 +85,7 @@ export const db = {
     {
       title: 'Stack',
       link: '#techstack',
-      icon: <BsCodeSlash size={20} />
+      icon: <BsCodeSlash size={20} />,
     },
     {
       title: 'Projects',
@@ -100,7 +101,7 @@ export const db = {
       title: 'Career',
       link: '#career',
       icon: <AiOutlineStock size={20} />,
-    },*/  
+    },*/
     {
       title: 'Contact',
       link: '#contact',
@@ -111,27 +112,27 @@ export const db = {
     {
       title: 'HTML',
       title_long: 'HyperText Markup Language',
-      icon: <BiLogoHtml5 size={75} color='#e34c26' />
+      icon: <BiLogoHtml5 size={75} color="#e34c26" />,
     },
     {
       title: 'CSS',
       title_long: 'Cascading Style Sheets',
-      icon: <BiLogoCss3 size={75} color='#264de4' />
+      icon: <BiLogoCss3 size={75} color="#264de4" />,
     },
     {
       title: 'JS',
       title_long: 'JavaScript',
-      icon: <BiLogoJavascript size={75} color='#f0db4f' />
+      icon: <BiLogoJavascript size={75} color="#f0db4f" />,
     },
     {
       title: 'React',
       title_long: 'ReactJS',
-      icon: <BiLogoReact size={75} color='#61dbfb' />
+      icon: <BiLogoReact size={75} color="#61dbfb" />,
     },
     {
       title: 'Node',
       title_long: 'Node.js',
-      icon: <BiLogoNodejs size={75} color='#026e00' />
-    }
-  ]
+      icon: <BiLogoNodejs size={75} color="#026e00" />,
+    },
+  ],
 };
