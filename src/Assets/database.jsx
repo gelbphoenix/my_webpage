@@ -7,11 +7,12 @@ import {
   AiOutlineUser,
 } from 'react-icons/ai';
 import {
-  BiLogoHtml5,
   BiLogoCss3,
+  BiLogoHtml5,
   BiLogoJavascript,
-  BiLogoReact,
   BiLogoNodejs,
+  BiLogoTailwindCss,
+  BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
 import {
@@ -128,6 +129,11 @@ export const db = {
       title: 'React',
       title_long: 'ReactJS',
       icon: <BiLogoReact size={75} color="#61dbfb" />,
+    },
+    {
+      title: 'Tailwind',
+      title_long: 'TailwindCSS',
+      icon: <BiLogoTailwindCss size={75} color="#00cec9" />,
     },
     {
       title: 'Node',
