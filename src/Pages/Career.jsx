@@ -20,6 +20,7 @@ const Career = () => {
             duration={item.duration}
             title={item.title}
             year={item.year}
+            company={item.company}
           />
         ))}
       </section>

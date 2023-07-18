@@ -1,4 +1,4 @@
-const CareerItem = ({ year, title, duration, details }) => {
+const CareerItem = ({ company, details, duration, year, title }) => {
   return (
     <>
       <ol className="flex flex-col md:flex-row relative border-l border-stone-300 dark:border-gray-700">
@@ -8,14 +8,20 @@ const CareerItem = ({ year, title, duration, details }) => {
             <span className="inline-block px-2 py-1 font-semibold text-white bg-[#001b5e] dark:bg-[#001b7e] rounded-md">
               {year}
             </span>
-            <span className="text-lg font-semibold text-[#001b5e] dark:text-[#1d3de0]">
-              {title}
-            </span>
-            <span className="my-1 text-sm font-medium leading-none text-stone-500 dark:text-stone-300">
-              {duration}
-            </span>
+            <div className="flex gap-4 items-baseline">
+              <span className="text-lg font-bold text-[#001b5e] dark:text-[#1d3de0]">
+                {title}
+              </span>
+              <span className="text-sm font-semibold uppercase leading-none text-stone-600 dark:text-stone-300">
+                {company}
+              </span>
+              <span className="text-sm font-medium leading-none text-stone-600 dark:text-stone-300">
+                {duration.text}{' '}
+                {duration.value && `(to ${year + duration.value})`}
+              </span>
+            </div>
           </p>
-          <p className="my-2 text-base font-normal text-stone-500 dark:text-stone-300">
+          <p className="my-2 text-base font-normal text-stone-600 dark:text-stone-300">
             {details}
           </p>
         </li>

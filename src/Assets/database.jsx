@@ -3,7 +3,7 @@ import {
   AiOutlineHome,
   AiOutlineProject,
   AiOutlineMail,
-  /*AiOutlineStock,*/
+  //AiOutlineStock,
   AiOutlineUser,
 } from 'react-icons/ai';
 import {
@@ -40,16 +40,13 @@ export const db = {
     {
       year: 2023,
       title: 'Student developer',
-      duration: '',
+      company: '',
+      duration: {
+        text: '',
+        value: null,
+      },
       details:
         'I`ve been teaching myself to code since January 2023. I focus on web development with Javascript, ReactJS and NodeJS.',
-    },
-    {
-      year: 2019,
-      title: 'Member of the Board of JuLis Ostwestfalen-Lippe',
-      duration: '1.16 Years',
-      details:
-        'As an member on the board of the Young Liberals (JuLis) in Ostwestfalen-Lippe, I was responsible for maintaining the website of the district association.',
     },
   ],
   env: [
@@ -101,11 +98,11 @@ export const db = {
       link: '#about',
       icon: <AiOutlineUser size={20} />,
     },
-    /*{
-      title: 'Career',
-      link: '#career',
-      icon: <AiOutlineStock size={20} />,
-    },*/
+    // {
+    //   title: 'Career',
+    //   link: '#career',
+    //   icon: <AiOutlineStock size={20} />,
+    // },
     {
       title: 'Contact',
       link: '#contact',
