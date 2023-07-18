@@ -1,4 +1,5 @@
 import { db } from 'Assets/database';
+import AboutParagraph from '../Components/AboutParagraph';
 
 const About = () => {
   const { about } = db;
@@ -13,12 +14,7 @@ const About = () => {
           About me
         </h1>
         {about.map((item, index) => (
-          <p
-            className="text-center py-8 text-stone-500 dark:text-stone-300"
-            key={index}
-          >
-            {item.text}
-          </p>
+          <AboutParagraph text={item.text} key={index} />
         ))}
       </section>
     </>
