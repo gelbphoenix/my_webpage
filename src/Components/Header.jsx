@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <button
         onClick={() => setNav(!nav)}
-        className="md:hidden fixed top-4 right-4 z-[99] dark:text-white"
+        className="md:hidden fixed top-4 right-4 z-[99] dark:text-white focus:ring-0"
       >
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </button>
