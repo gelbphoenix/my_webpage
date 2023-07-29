@@ -1,9 +1,9 @@
 import { Button, Tooltip } from 'flowbite-react';
 
-const DesktopProfile = ({ icon, title }) => {
+const DesktopProfile = ({ icon, title, longTitle }) => {
   return (
     <>
-      <Tooltip content={title} placement="left">
+      <Tooltip content={longTitle} placement="left">
         <Button
           as="a"
           href={`https://${title.toLowerCase()}.gelbphoenix.de`}

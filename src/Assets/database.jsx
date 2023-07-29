@@ -52,23 +52,28 @@ export const db = {
   ],
   profiles: [
     {
-      title: 'X (Twitter)',
+      title: 'Twitter',
+      longTitle: 'X (Twitter)',
       icon: <XCorpIcon size={20} />,
     },
     {
       title: 'Instagram',
+      longTitle: 'Instagram',
       icon: <SiInstagram size={20} />,
     },
     {
       title: 'Mastodon',
+      longTitle: 'Mastodon',
       icon: <SiMastodon size={20} />,
     },
     {
       title: 'LinkedIn',
+      longTitle: 'LinkedIn',
       icon: <SiLinkedin size={20} />,
     },
     {
-      title: 'Github',
+      title: 'GitHub',
+      longTitle: 'GitHub',
       icon: <SiGithub size={20} />,
     },
   ],

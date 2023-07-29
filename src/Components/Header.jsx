@@ -58,8 +58,8 @@ const Header = () => {
             <DesktopProfile
               key={index}
               icon={profile.icon}
-              link={profile.link}
               title={profile.title}
+              longTitle={profile.longTitle}
             />
           ))}
         </div>

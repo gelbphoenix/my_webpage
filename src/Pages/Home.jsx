@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <>
-      <section id='home'>
+      <section id="home">
         <img
           src="https://images.unsplash.com/photo-1687704841026-f8fff04d0b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
           className="w-full h-screen object-cover scale-x-[-1]"
@@ -18,7 +18,7 @@ const Home = () => {
           <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
             <h1 className="flex lg:flex-row flex-col sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200 md:max-w-full sm:max-w-[50dvw] max-w-[70dvw]">
               I`m
-              <p className='lg:pl-4 lg:pt-0 pt-2 home-name sm:leading-[3.75rem] leading-[3rem]'>
+              <p className="lg:pl-4 lg:pt-0 pt-2 home-name sm:leading-[3.75rem] leading-[3rem]">
                 Phoenix Paulina Schmid
               </p>
             </h1>
@@ -45,8 +45,8 @@ const Home = () => {
               {profiles.map((profile, index) => (
                 <MobileProfile
                   icon={profile.icon}
-                  link={profile.link}
                   title={profile.title}
+                  longTitle={profile.longTitle}
                   key={index}
                 />
               ))}

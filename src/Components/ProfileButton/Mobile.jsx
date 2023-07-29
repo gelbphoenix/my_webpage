@@ -1,9 +1,9 @@
 import { Button, Tooltip } from 'flowbite-react';
 
-const MobileProfile = ({ icon, title }) => {
+const MobileProfile = ({ icon, title, longTitle }) => {
   return (
     <>
-      <Tooltip content={title} placement="bottom">
+      <Tooltip content={longTitle} placement="bottom">
         <Button
           as="a"
           href={`https://${title.toLowerCase()}.gelbphoenix.de`}
