@@ -15,13 +15,8 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
-import {
-  SiTwitter,
-  SiGithub,
-  SiLinkedin,
-  SiInstagram,
-  SiMastodon,
-} from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
+import { XCorpIcon } from '../Components/icons';
 
 // JSON Database
 export const db = {
@@ -57,8 +52,8 @@ export const db = {
   ],
   profiles: [
     {
-      title: 'Twitter',
-      icon: <SiTwitter size={20} />,
+      title: 'X (Twitter)',
+      icon: <XCorpIcon size={20} />,
     },
     {
       title: 'Instagram',
