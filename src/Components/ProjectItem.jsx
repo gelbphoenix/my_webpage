@@ -3,6 +3,8 @@ import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { BiSolidShow } from 'react-icons/bi';
 
 const ProjectItem = ({ title, link, page }) => {
+  if (title === 'gelbphoenix/gelbphoenix') return;
+
   return (
     <>
       <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-gray-400 to-[#001b5e] dark:from-gray-600 dark:to-[#4673e4] overflow-hidden object-contain">
