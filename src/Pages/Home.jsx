@@ -15,7 +15,7 @@ const Home = () => {
           className="w-full h-screen object-cover scale-x-[-1]"
         />
         <div className="w-full h-screen absolute top-0 left-0 bg-gray-300/50 dark:bg-black/50">
-          <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+          <div className="max-w-[700px] w-max m-auto h-full flex flex-col justify-center lg:items-start items-center">
             <h1 className="flex lg:flex-row flex-col sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200 md:max-w-full sm:max-w-[50dvw] max-w-[70dvw]">
               I`m
               <p className="lg:pl-4 lg:pt-0 pt-2 home-name sm:leading-[3.75rem] leading-[3rem]">
@@ -26,13 +26,13 @@ const Home = () => {
               I`m a
               <TypeAnimation
                 sequence={[
-                  'Developer',
+                  'Developer.',
                   1500,
-                  'Coder',
+                  'Coder.',
                   1500,
-                  'Lerner',
+                  'Lerner.',
                   1500,
-                  'Creator',
+                  'Creator.',
                   1500,
                 ]}
                 wrapper="div"
