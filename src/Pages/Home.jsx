@@ -16,9 +16,9 @@ const Home = () => {
         />
         <div className="w-full h-screen absolute top-0 left-0 bg-gray-300/50 dark:bg-black/50">
           <div className="max-w-[700px] w-max m-auto h-full flex flex-col justify-center lg:items-start items-center">
-            <h1 className="flex lg:flex-row flex-col sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200 md:max-w-full sm:max-w-[50dvw] max-w-[70dvw]">
+            <h1 className="flex lg:flex-row flex-col sm:text-5xl text-4xl font-bold text-gray-800 dark:text-gray-200 md:max-w-full sm:max-w-[50dvw] max-w-[70dvw] items-baseline">
               I`m
-              <p className="lg:pl-4 lg:pt-0 pt-2 home-name sm:leading-[3.75rem] leading-[3rem]">
+              <p className="lg:pl-4 lg:pt-0 pt-2 home-name">
                 Phoenix Paulina Schmid
               </p>
             </h1>
