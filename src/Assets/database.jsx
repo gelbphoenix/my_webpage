@@ -112,32 +112,26 @@ export const db = {
   techStack: [
     {
       title: 'HTML',
-      title_long: 'HyperText Markup Language',
       icon: <BiLogoHtml5 size={75} color="#e34c26" />,
     },
     {
       title: 'CSS',
-      title_long: 'Cascading Style Sheets',
       icon: <BiLogoCss3 size={75} color="#264de4" />,
     },
     {
       title: 'JS',
-      title_long: 'JavaScript',
       icon: <BiLogoJavascript size={75} color="#f0db4f" />,
     },
     {
       title: 'React',
-      title_long: 'ReactJS',
       icon: <BiLogoReact size={75} color="#61dbfb" />,
     },
     {
       title: 'Tailwind',
-      title_long: 'TailwindCSS',
       icon: <BiLogoTailwindCss size={75} color="#00cec9" />,
     },
     {
       title: 'Node',
-      title_long: 'Node.js',
       icon: <BiLogoNodejs size={75} color="#026e00" />,
     },
   ],

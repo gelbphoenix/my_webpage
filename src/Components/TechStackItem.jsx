@@ -1,7 +1,7 @@
 const TechStackItem = ({ icon, title, tLong }) => {
   return (
     <>
-      <div className="relative flex flex-[1_1_275px] items-center justify-center aspect-video rounded-xl group overflow-hidden object-contain hover:bg-[#001b5e89]">
+      <li className="relative flex flex-[1_1_275px] items-center justify-center aspect-video rounded-xl group overflow-hidden object-contain hover:bg-[#001b5e89] list-none">
         <div className="flex flex-col items-center justify-center">
           <div className="group-hover:opacity-25 ease-out duration-100 aspect-auto dark:text-stone-300 w-full flex items-center justify-center">
             {icon}
@@ -15,9 +15,9 @@ const TechStackItem = ({ icon, title, tLong }) => {
             </h4>
           </div>
         </div>
-      </div>
+      </li>
     </>
-  )
-}
+  );
+};
 
-export default TechStackItem
+export default TechStackItem;

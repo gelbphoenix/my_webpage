@@ -1,5 +1,6 @@
 /* importing Sacramento font from Coollabs Fonts API*/
 @import url('https://api.fonts.coollabs.io/css2?family=Sacramento&display=swap');
+@import url('sb.css');
 
 @tailwind base;
 @tailwind components;
