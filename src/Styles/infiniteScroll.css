@@ -11,6 +11,9 @@
 }
 
 .scroller {
+  width: 70dvw;
+  max-width: 768px;
+
   &[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: var(--mask-scroller);
