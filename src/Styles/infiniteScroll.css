@@ -1,11 +1,10 @@
 :root {
-  --gray-200: color: rgb(229 231 235);
   --mask-scroller: linear-gradient(
     90deg,
     transparent,
-    var(--gray-200) 20%,
-    var(--gray-200) 80%,
-    transparent,
+    rgb(229 231 235) 20%,
+    rgb(229 231 235) 80%,
+    transparent
   );
   --gap-scroller-inner: 1rem;
 }
@@ -14,11 +13,10 @@
   width: 70dvw;
   max-width: 768px;
 
-  &[data-animated="true"] {
+  &[data-animated='true'] {
     overflow: hidden;
-    -webkit-mask: var(--mask-scroller);
     mask: var(--mask-scroller);
-    
+
     &[data-speed],
     &[data-speed='standard'] {
       --_animation-duration: 40s;
@@ -27,16 +25,16 @@
     &[data-speed='fast'] {
       --_animation-duration: 20s;
     }
-  
+
     &[data-speed='slow'] {
       --_animation-duration: 60s;
     }
 
     &[data-direction],
-    &[data-direction="left"] {
+    &[data-direction='left'] {
       --_animation-direction: forwards;
     }
-    
+
     &[data-direction='right'] {
       --_animation-direction: reverse;
     }
@@ -45,7 +43,8 @@
       width: fit-content;
       aspect-ratio: 10 / 1;
       flex-wrap: nowrap;
-      animation: scroll var(--_animation-duration) var(--_animation-direction) linear infinite;
+      animation: scroll var(--_animation-duration) var(--_animation-direction)
+        linear infinite;
 
       > li {
         padding-inline: 1.5rem;
