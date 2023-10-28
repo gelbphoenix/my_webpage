@@ -15,6 +15,7 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
+import { PiStarOfDavid } from 'react-icons/pi';
 import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
 import { XCorpIcon } from '../Components/icons';
 
@@ -133,6 +134,13 @@ export const db = {
     {
       title: 'Node',
       icon: <BiLogoNodejs size={75} color="#026e00" />,
+    },
+  ],
+  toast: [
+    {
+      icon: <PiStarOfDavid size={30} />,
+      title: 'Am Israel Chai!',
+      description: 'In solidarity with the people of Israel!',
     },
   ],
 };

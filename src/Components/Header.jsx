@@ -4,6 +4,7 @@ import { db } from 'Assets/database';
 import { DesktopMenuButton, MobileMenuButton } from 'Components/MenuButton';
 import { DesktopThemeButton, MobileThemeButton } from 'Components/ThemeButton';
 import { DesktopProfile } from 'Components/ProfileButton';
+import Toast from 'Components/Toast';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -34,6 +35,8 @@ const Header = () => {
       ) : (
         ''
       )}
+
+      <Toast />
 
       <div
         className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(6*68px))/2)] left-[.1875rem] z-10`}
