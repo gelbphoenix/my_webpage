@@ -23,7 +23,7 @@ import {
   SiMastodon,
   SiIcloud,
 } from 'react-icons/si';
-import { XCorpIcon } from '../Components/icons';
+import { XCorpIcon, ThreadsInsta } from '../Components/icons';
 
 // JSON Database
 export const db = {
@@ -69,9 +69,19 @@ export const db = {
       icon: <SiInstagram size={20} />,
     },
     {
+      title: 'Threads',
+      longTitle: 'Threads',
+      icon: <ThreadsInsta size={20} />,
+    },
+    {
       title: 'Mastodon',
       longTitle: 'Mastodon',
       icon: <SiMastodon size={20} />,
+    },
+    {
+      title: 'BlueSky',
+      longTitle: 'BlueSky',
+      icon: <SiIcloud size={20} />,
     },
     {
       title: 'LinkedIn',
@@ -82,11 +92,6 @@ export const db = {
       title: 'GitHub',
       longTitle: 'GitHub',
       icon: <SiGithub size={20} />,
-    },
-    {
-      title: 'BlueSky',
-      longTitle: 'BlueSky',
-      icon: <SiIcloud size={20} />,
     },
   ],
   sites: [
