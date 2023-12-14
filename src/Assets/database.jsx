@@ -16,13 +16,7 @@ import {
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
 import { PiPlaceholderFill } from 'react-icons/pi';
-import {
-  SiGithub,
-  SiLinkedin,
-  SiInstagram,
-  SiMastodon,
-  SiIcloud,
-} from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
 import { XCorpIcon, ThreadsInsta } from '../Components/icons';
 
 // JSON Database
@@ -77,11 +71,6 @@ export const db = {
       title: 'Mastodon',
       longTitle: 'Mastodon',
       icon: <SiMastodon size={20} />,
-    },
-    {
-      title: 'BlueSky',
-      longTitle: 'BlueSky',
-      icon: <SiIcloud size={20} />,
     },
     {
       title: 'LinkedIn',
