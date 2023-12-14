@@ -15,8 +15,14 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
-import { PiStarOfDavid } from 'react-icons/pi';
-import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
+import { PiPlaceholderFill } from 'react-icons/pi';
+import {
+  SiGithub,
+  SiLinkedin,
+  SiInstagram,
+  SiMastodon,
+  SiIcloud,
+} from 'react-icons/si';
 import { XCorpIcon } from '../Components/icons';
 
 // JSON Database
@@ -76,6 +82,11 @@ export const db = {
       title: 'GitHub',
       longTitle: 'GitHub',
       icon: <SiGithub size={20} />,
+    },
+    {
+      title: 'BlueSky',
+      longTitle: 'BlueSky',
+      icon: <SiIcloud size={20} />,
     },
   ],
   sites: [
@@ -138,9 +149,9 @@ export const db = {
   ],
   toast: [
     {
-      icon: <PiStarOfDavid size={30} />,
-      title: 'Am Israel Chai!',
-      description: 'In solidarity with the people of Israel!',
+      icon: <PiPlaceholderFill size={20} />,
+      title: '',
+      description: '',
     },
   ],
 };

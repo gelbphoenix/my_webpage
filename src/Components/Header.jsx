@@ -8,7 +8,7 @@ import Toast from 'Components/Toast';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-  const { sites, profiles } = db;
+  const { sites, profiles, toast } = db;
 
   return (
     <>
@@ -36,7 +36,7 @@ const Header = () => {
         ''
       )}
 
-      <Toast />
+      <Toast content={toast[0]} />
 
       <div
         className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(6*68px))/2)] left-[.1875rem] z-10`}
