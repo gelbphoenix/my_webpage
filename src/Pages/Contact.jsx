@@ -18,7 +18,7 @@ const Contact = () => {
           HeroTofu
         </a>
       </p>
-      <ContactForm link={env[0].link} />
+      <ContactForm link={env.link} />
     </section>
   );
 };

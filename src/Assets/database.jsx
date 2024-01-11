@@ -45,12 +45,10 @@ export const db = {
         'I`ve been teaching myself to code since January 2023. I focus on web development with Javascript, ReactJS and NodeJS.',
     },
   ],
-  env: [
-    {
-      link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
-      username: 'gelbphoenix',
-    },
-  ],
+  env: {
+    link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
+    username: 'gelbphoenix',
+  },
   profiles: [
     {
       title: 'Twitter',
