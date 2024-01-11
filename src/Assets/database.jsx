@@ -15,6 +15,7 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
+import { FaLinux } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
 import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
 import { XCorpIcon, ThreadsInsta } from '../Components/icons';
@@ -137,6 +138,10 @@ export const db = {
     {
       title: 'Node',
       icon: <BiLogoNodejs size={75} color="#026e00" />,
+    },
+    {
+      title: 'Linux',
+      icon: <FaLinux size={75} color="#00bfff" />,
     },
   ],
   toast: [
