@@ -3,7 +3,7 @@ import {
   AiOutlineHome,
   AiOutlineProject,
   AiOutlineMail,
-  //AiOutlineStock,
+  // AiOutlineStock,
   AiOutlineUser,
 } from 'react-icons/ai';
 import {
@@ -141,7 +141,7 @@ export const db = {
     },
     {
       title: 'Linux',
-      icon: <FaLinux size={75} color="#00bfff" />,
+      icon: <FaLinux size={75} color="#f79f00" />,
     },
   ],
   toast: [
