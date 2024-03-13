@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import { MobileProfile } from 'Components/ProfileButton/';
+import ProfileButton from 'Components/ProfileButton';
 import { db } from 'Assets/database';
 import { Button } from 'flowbite-react';
 import { FaChevronDown } from 'react-icons/fa';
@@ -41,13 +41,14 @@ const Home = () => {
                 className="sm:text-3xl text-2xl pl-[5px]"
               />
             </h2>
-            <div className="md:hidden flex justify-evenly pt-6 max-w-[450px] w-full items-center flex-wrap">
+            <div className="md:hidden flex justify-evenly pt-6 max-w-[450px] w-[90vw] sm:w-[100vw] items-center flex-wrap">
               {profiles.map((profile, index) => (
-                <MobileProfile
+                <ProfileButton
                   icon={profile.icon}
                   title={profile.title}
                   longTitle={profile.longTitle}
                   key={index}
+                  mobile
                 />
               ))}
             </div>

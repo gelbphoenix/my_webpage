@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { db } from 'Assets/database';
 import { DesktopMenuButton, MobileMenuButton } from 'Components/MenuButton';
 import { DesktopThemeButton, MobileThemeButton } from 'Components/ThemeButton';
-import { DesktopProfile } from 'Components/ProfileButton';
+import ProfileButton from 'Components/ProfileButton';
 import Toast from 'Components/Toast';
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
       </button>
 
       {nav ? (
-        <div className="fixed w-full h-screen bg-white/[0.55] dark:bg-black/[0.55] flex flex-col justify-center items-center z-20">
+        <div className="fixed w-full h-screen bg-white/[0.25] dark:bg-black/[0.35] backdrop-blur flex flex-col justify-center items-center z-20">
           {sites.map((element, index) => (
             <MobileMenuButton
               title={element.title}
@@ -58,7 +58,7 @@ const Header = () => {
       >
         <div className="flex flex-col">
           {profiles.map((profile, index) => (
-            <DesktopProfile
+            <ProfileButton
               key={index}
               icon={profile.icon}
               title={profile.title}
