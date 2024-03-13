@@ -1,4 +1,5 @@
 import { Button } from 'flowbite-react';
+import { BiMailSend } from 'react-icons/bi';
 
 const ContactForm = ({ link }) => {
   return (
@@ -75,9 +76,10 @@ const ContactForm = ({ link }) => {
         <Button
           type="submit"
           required
-          className="bg-[#001b5e] dark:bg-[#4673e4] text-gray-300 mt-4 w-full p-4 uppercase font-extrabold hover:bg-inherit focus:ring-0"
+          className="bg-[#001b5e] dark:bg-[#4673e4] text-gray-300 flex mt-4 w-full p-4 uppercase font-extrabold hover:bg-inherit focus:ring-0 justify-center items-center"
         >
-          Send Message
+          <BiMailSend size={25} />
+          <span className="pl-2">Send Message</span>
         </Button>
         <div
           className="overflow-hidden whitespace-nowrap indent-[-99999px] absolute"
