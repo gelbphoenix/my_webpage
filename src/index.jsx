@@ -4,7 +4,7 @@ import 'flowbite';
 import SimpleBar from 'simplebar-react';
 
 import App from '@/App';
-import ThemeProvider from './Context/ThemeContext';
+import ThemeProvider from 'Contexts/ThemeContext';
 import 'Styles/index.css';
 import 'simplebar-react/dist/simplebar.min.css';
 
