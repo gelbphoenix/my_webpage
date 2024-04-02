@@ -10,6 +10,14 @@ const Header = () => {
   const [nav, setNav] = useState(false);
   const { sites, profiles, toast } = db;
 
+  const handleListLength = (list, plusOne) => {
+    let output = list.length;
+
+    if (plusOne) output = output + 1;
+
+    return output;
+  };
+
   return (
     <>
       <button
@@ -39,7 +47,10 @@ const Header = () => {
       <Toast content={toast[0]} />
 
       <div
-        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(6*68px))/2)] left-[.1875rem] z-10`}
+        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(${handleListLength(
+          sites,
+          true
+        )}*68px))/2)] left-[.1875rem] z-10`}
       >
         <div className="flex flex-col">
           {sites.map((element, index) => (
@@ -54,7 +65,9 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(6*68px))/2)] right-[.1875rem] z-10`}
+        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(${handleListLength(
+          profiles
+        )}*68px))/2)] right-[.1875rem] z-10`}
       >
         <div className="flex flex-col">
           {profiles.map((profile, index) => (

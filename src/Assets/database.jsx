@@ -18,7 +18,7 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { FaLinux } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
 import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
-import { XCorpIcon, ThreadsInsta } from '../Components/icons';
+import { ThreadsInsta } from '../Components/icons';
 
 // JSON Database
 export const db = {
@@ -51,11 +51,6 @@ export const db = {
     username: 'gelbphoenix',
   },
   profiles: [
-    {
-      title: 'Twitter',
-      longTitle: 'X (Twitter)',
-      icon: <XCorpIcon size={20} />,
-    },
     {
       title: 'Instagram',
       longTitle: 'Instagram',
