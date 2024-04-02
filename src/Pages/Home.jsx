@@ -28,13 +28,12 @@ const Home = () => {
                 sequence={[
                   'Developer.',
                   1500,
-                  'Coder.',
-                  1500,
                   'Lerner.',
                   1500,
                   'Creator.',
                   1500,
                 ]}
+                speed={50}
                 wrapper="div"
                 cursor={true}
                 repeat={Infinity}
