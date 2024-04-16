@@ -15,7 +15,7 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
-import { FaLinux } from 'react-icons/fa';
+import { FaLinux, FaBlog } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
 import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
 import { ThreadsInsta } from '../Components/icons';
@@ -76,6 +76,11 @@ export const db = {
       longTitle: 'GitHub',
       icon: <SiGithub size={20} />,
     },
+    {
+      title: 'Blog',
+      longTitle: 'Gelbphoenix Blog',
+      icon: <FaBlog size={20} />
+    }
   ],
   sites: [
     {
