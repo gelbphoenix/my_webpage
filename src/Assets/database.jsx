@@ -67,11 +67,6 @@ export const db = {
       icon: <SiMastodon size={20} />,
     },
     {
-      title: 'LinkedIn',
-      longTitle: 'LinkedIn',
-      icon: <SiLinkedin size={20} />,
-    },
-    {
       title: 'GitHub',
       longTitle: 'GitHub',
       icon: <SiGithub size={20} />,
@@ -79,8 +74,8 @@ export const db = {
     {
       title: 'Blog',
       longTitle: 'Gelbphoenix Blog',
-      icon: <FaBlog size={20} />
-    }
+      icon: <FaBlog size={20} />,
+    },
   ],
   sites: [
     {
