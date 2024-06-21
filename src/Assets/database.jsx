@@ -71,11 +71,6 @@ export const db = {
       longTitle: 'GitHub',
       icon: <SiGithub size={20} />,
     },
-    {
-      title: 'Blog',
-      longTitle: 'Gelbphoenix Blog',
-      icon: <FaBlog size={20} />,
-    },
   ],
   sites: [
     {
