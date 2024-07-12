@@ -5,7 +5,6 @@ import { db } from 'Assets/database';
 
 const ProjectItem = ({ title, link, page }) => {
   const ghUserName = db.env.username;
-  const userPicture = `https://avatars.githubusercontent.com/${ghUserName}`
 
   if (title === `${ghUserName}/${ghUserName}`) return;
 
@@ -15,7 +14,10 @@ const ProjectItem = ({ title, link, page }) => {
         <img
           src={`https://raw.githubusercontent.com/${title}/main/public/picture.webp`}
           className="rounded-xl group-hover:opacity-10 ease-out duration-100 aspect-square object-cover object-left bg-gray-400 w-full"
-          style={{ 'backgroundImage': `url(${userPicture})`}}
+          onError={({ currentTarget }) => {
+            currentTarget.onError = null;
+            currentTarget.src = `https://avatars.githubusercontent.com/${ghUserName}`
+          }}
         />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[75%]">
           <h3 className="mdl:text-1xl text-base font-bold text-white tracking-wider text-center truncate">
