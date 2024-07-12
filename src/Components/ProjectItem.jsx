@@ -5,8 +5,13 @@ import { db } from 'Assets/database';
 
 const ProjectItem = ({ title, link, page }) => {
   const ghUserName = db.env.username;
+  
+  const bannedProjects = [
+    `${ghUserName}/${ghUserName}`,
+    `${ghUserName}/dotfiles`,
+  ]
 
-  if (title === `${ghUserName}/${ghUserName}`) return;
+  if (title === bannedProjects.indexOf(title) > -1 ) return;
 
   return (
     <>
