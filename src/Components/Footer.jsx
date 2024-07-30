@@ -1,7 +1,10 @@
 import { Button, Tooltip } from 'flowbite-react';
 import { FaChevronUp } from 'react-icons/fa';
+import { db } from 'Assets/database.jsx';
 
 const Footer = () => {
+  const { env } = db;
+
   return (
     <>
       <div className="grid grid-cols-3 gap-2 pb-2 text-sm">
@@ -29,10 +32,10 @@ const Footer = () => {
         </section>
         <section className="flex lg:flex-row flex-col flex-wrap justify-around items-end content-center text-gray-600 dark:text-gray-300">
           <a href="#" className="hover:underline">
-            https://gelbphoenix.de/
+            {`https://${env.domain}/`}
           </a>
-          <a href="mailto:paulina@gelbphoenix.de" className="hover:underline">
-            paulina@gelbphoenix.de
+          <a href={`mailto:${env.mail}`} className="hover:underline">
+            {env.mail}
           </a>
         </section>
       </div>

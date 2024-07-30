@@ -15,9 +15,9 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
-import { FaLinux, FaBlog } from 'react-icons/fa';
+import { FaLinux } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
-import { SiGithub, SiLinkedin, SiInstagram, SiMastodon } from 'react-icons/si';
+import { SiGithub, SiInstagram, SiMastodon } from 'react-icons/si';
 import { ThreadsInsta } from '../Components/icons';
 
 // JSON Database
@@ -49,6 +49,8 @@ export const db = {
   env: {
     link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
     username: 'gelbphoenix',
+    mail: 'paulina@gelbphoenix.de',
+    domain: 'gelbphoenix.de',
   },
   profiles: [
     {
