@@ -64,7 +64,7 @@ export const db = {
       icon: <ThreadsInsta size={20} />,
     },
     {
-      title: 'Fediverse',
+      title: 'Mastodon',
       longTitle: 'Mastodon',
       icon: <SiMastodon size={20} />,
     },
