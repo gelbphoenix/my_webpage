@@ -17,8 +17,7 @@ import {
 import { BsCodeSlash } from 'react-icons/bs';
 import { FaLinux } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
-import { SiGithub, SiInstagram, SiMastodon } from 'react-icons/si';
-import { ThreadsInsta } from '../Components/icons';
+import { SiGithub, SiMastodon } from 'react-icons/si';
 
 // JSON Database
 export const db = {
@@ -53,16 +52,6 @@ export const db = {
     domain: 'gelbphoenix.de',
   },
   profiles: [
-    {
-      title: 'Instagram',
-      longTitle: 'Instagram',
-      icon: <SiInstagram size={20} />,
-    },
-    {
-      title: 'Threads',
-      longTitle: 'Threads',
-      icon: <ThreadsInsta size={20} />,
-    },
     {
       title: 'Mastodon',
       longTitle: 'Mastodon',
