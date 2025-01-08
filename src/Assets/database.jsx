@@ -48,7 +48,7 @@ export const db = {
   env: {
     link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
     username: 'gelbphoenix',
-    mail: 'paulina@gelbphoenix.de',
+    mail: 'kontakt@gelbphoenix.de',
     domain: 'gelbphoenix.de',
   },
   profiles: [
