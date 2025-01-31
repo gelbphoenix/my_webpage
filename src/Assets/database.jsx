@@ -49,7 +49,10 @@ export const db = {
     link: 'https://public.herotofu.com/v1/4397f080-18f1-11ee-8025-97a9fb2f29da',
     username: 'gelbphoenix',
     mail: 'kontakt@gelbphoenix.de',
-    domain: 'gelbphoenix.de',
+    domain: {
+      base: 'gelbphoenix.de',
+      link: 'gelbphoenix.link',
+    },
   },
   profiles: [
     {

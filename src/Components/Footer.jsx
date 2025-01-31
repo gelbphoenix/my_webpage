@@ -32,7 +32,7 @@ const Footer = () => {
         </section>
         <section className="flex lg:flex-row flex-col flex-wrap justify-around items-end content-center text-gray-600 dark:text-gray-300">
           <a href="#" className="hover:underline">
-            {`https://${env.domain}/`}
+            {`https://${env.domain.base}/`}
           </a>
           <a href={`mailto:${env.mail}`} className="hover:underline">
             {env.mail}
