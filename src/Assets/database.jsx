@@ -15,7 +15,7 @@ import {
   BiLogoReact,
 } from 'react-icons/bi';
 import { BsCodeSlash } from 'react-icons/bs';
-import { FaLinux } from 'react-icons/fa';
+import { FaLinux, FaBlog } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
 import { SiGithub, SiMastodon } from 'react-icons/si';
 
@@ -59,6 +59,11 @@ export const db = {
       title: 'Mastodon',
       longTitle: 'Mastodon',
       icon: <SiMastodon size={20} />,
+    },
+    {
+      title: 'Blog',
+      longTitle: 'Blog',
+      icon: <FaBlog size={20} />,
     },
     {
       title: 'GitHub',
