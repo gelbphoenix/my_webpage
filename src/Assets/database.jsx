@@ -18,7 +18,6 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { FaLinux, FaBlog } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
 import { SiGithub, SiMastodon, SiPixelfed } from 'react-icons/si';
-import { RiPixelfedFill } from 'react-icons/ri';
 
 // JSON Database
 export const db = {
