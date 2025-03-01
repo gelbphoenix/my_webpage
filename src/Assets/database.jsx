@@ -17,7 +17,8 @@ import {
 import { BsCodeSlash } from 'react-icons/bs';
 import { FaLinux, FaBlog } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
-import { SiGithub, SiMastodon } from 'react-icons/si';
+import { SiGithub, SiMastodon, SiPixelfed } from 'react-icons/si';
+import { RiPixelfedFill } from 'react-icons/ri';
 
 // JSON Database
 export const db = {
@@ -59,6 +60,11 @@ export const db = {
       title: 'Mastodon',
       longTitle: 'Mastodon',
       icon: <SiMastodon size={20} />,
+    },
+    {
+      title: 'Pixelfed',
+      longTitle: 'Pixelfed',
+      icon: <SiPixelfed size={20} />,
     },
     {
       title: 'Blog',
