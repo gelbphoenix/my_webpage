@@ -57,22 +57,22 @@ export const db = {
   profiles: [
     {
       title: 'Mastodon',
-      longTitle: 'Mastodon',
+      longTitle: '@gelbphoenix@social.gelbphoenix.de',
       icon: <SiMastodon size={20} />,
     },
     {
       title: 'Pixelfed',
-      longTitle: 'Pixelfed',
+      longTitle: '@gelbphoenix@gram.social',
       icon: <SiPixelfed size={20} />,
     },
     {
       title: 'Blog',
-      longTitle: 'Blog',
+      longTitle: 'blog.gelbphoenix.de',
       icon: <FaBlog size={20} />,
     },
     {
       title: 'GitHub',
-      longTitle: 'GitHub',
+      longTitle: 'GitHub/@gelbphoenix',
       icon: <SiGithub size={20} />,
     },
   ],
