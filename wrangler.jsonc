@@ -1,0 +1,17 @@
+{
+  "name": "my-webpage",
+  "compatibility_date": "2025-07-26",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "gelbphoenix.de",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.gelbphoenix.de",
+      "custom_domain": true
+    }
+  ]
+}
