@@ -9,7 +9,7 @@ const ProjectItem = ({ title, link, page }) => {
   const bannedProjects = [
     `${ghUserName}/${ghUserName}`,
     `${ghUserName}/dotfiles`,
-  ]
+  ];
 
   if (bannedProjects.includes(title)) return;
 
@@ -21,7 +21,7 @@ const ProjectItem = ({ title, link, page }) => {
           className="rounded-xl group-hover:opacity-10 ease-out duration-100 aspect-square object-cover object-left bg-gray-400 w-full"
           onError={({ currentTarget }) => {
             currentTarget.onError = null;
-            currentTarget.src = `https://avatars.githubusercontent.com/${ghUserName}`
+            currentTarget.src = `https://avatars.githubusercontent.com/${ghUserName}`;
           }}
         />
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[75%]">
@@ -41,7 +41,7 @@ const ProjectItem = ({ title, link, page }) => {
                 Repo
               </span>
             </Button>
-            {page !== window.location.href.substring(0, 22) ? (
+            {page && page !== window.location.href.substring(0, 22) ? (
               <Button
                 as="a"
                 href={page}
