@@ -1,0 +1,30 @@
+name: Deploy webpage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: docker
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Build site
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to Cloudflare
+        id: deploy
+        uses: https://github.com/cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: print deployment-url
+        env:
+          DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: echo $DEPLOYMENT_URL
