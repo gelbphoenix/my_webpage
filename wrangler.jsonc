@@ -1,9 +1,9 @@
 {
   "name": "my-webpage",
   "compatibility_date": "2025-07-26",
-  "main": "./",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
   },
   "routes": [
     {

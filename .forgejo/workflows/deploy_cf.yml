@@ -23,8 +23,10 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: .
+          command: deploy --assets ./dist
 
-      - name: print deployment-url
+      - name: Show the Deployment URL
+        run: echo "Deployed to $DEPLOYMENT_URL"
         env:
           DEPLOYMENT_URL: ${{ steps.deploy.outputs.deployment-url }}
-        run: echo $DEPLOYMENT_URL
