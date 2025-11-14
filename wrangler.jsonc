@@ -1,7 +1,7 @@
 {
   "name": "my-webpage",
   "compatibility_date": "2025-07-26",
-  "main": "/",
+  "main": "./",
   "assets": {
     "directory": "./dist"
   },
