@@ -17,7 +17,7 @@ import {
 import { BsCodeSlash } from 'react-icons/bs';
 import { FaLinux, FaBlog } from 'react-icons/fa';
 import { PiPlaceholderFill } from 'react-icons/pi';
-import { SiGithub, SiMastodon, SiPixelfed } from 'react-icons/si';
+import { SiGithub, SiMastodon, SiPixelfed, SiForgejo } from 'react-icons/si';
 
 // JSON Database
 export const db = {
@@ -74,6 +74,11 @@ export const db = {
       title: 'GitHub',
       longTitle: 'GitHub/@gelbphoenix',
       icon: <SiGithub size={20} />,
+    },
+    {
+      title: 'git',
+      longTitle: 'Forgejo',
+      icon: <SiForgejo size={20} />,
     },
   ],
   sites: [
