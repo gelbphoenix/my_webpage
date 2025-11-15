@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { db } from 'Assets/database';
 import { DesktopMenuButton, MobileMenuButton } from 'Components/MenuButton';
@@ -9,6 +9,27 @@ import Toast from 'Components/Toast';
 const Header = () => {
   const [nav, setNav] = useState(false);
   const { sites, profiles, toast } = db;
+  const [insetYSites, setInsetYSites] = useState(0);
+  const [insetYProfiles, setInsetYProfiles] = useState(0);
+
+  const countSites = useMemo(() => sites.length + 1, [sites.length]);
+  const countProfiles = useMemo(() => profiles.length, [profiles.length]);
+  const calcInset = count => (window.innerHeight - count * 68) / 2;
+
+  useEffect(() => {
+    setInsetYProfiles(calcInset(countProfiles));
+    setInsetYSites(calcInset(countSites));
+  }, [countProfiles, countSites]);
+
+  useEffect(() => {
+    const onResize = () => {
+      setInsetYProfiles(calcInset(countProfiles));
+      setInsetYSites(calcInset(countSites));
+    };
+
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [countProfiles, countSites]);
 
   return (
     <>
@@ -39,7 +60,8 @@ const Header = () => {
       <Toast content={toast[0]} />
 
       <div
-        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(6*68px))/2)] left-[.1875rem] z-10`}
+        style={{ insetBlock: `${insetYSites}px` }}
+        className={`md:block hidden fixed left-[.1875rem] z-10`}
       >
         <div className="flex flex-col">
           {sites.map((element, index) => (
@@ -54,7 +76,8 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`md:block hidden fixed inset-y-[calc(calc(100vh-calc(3*68px))/2)] right-[.1875rem] z-10`}
+        style={{ insetBlock: `${insetYProfiles}px` }}
+        className={`md:block hidden fixed right-[.1875rem] z-10`}
       >
         <div className="flex flex-col">
           {profiles.map((profile, index) => (
