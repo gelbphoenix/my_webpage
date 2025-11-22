@@ -3,7 +3,7 @@ import { Button, Tooltip } from 'flowbite-react';
 const DesktopMenuButton = ({ link, icon, title }) => {
   return (
     <>
-      <Tooltip content={title} placement="right">
+      <Tooltip content={title} placement="right" className="w-max">
         <Button
           as="a"
           href={link}

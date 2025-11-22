@@ -88,7 +88,7 @@ export const db = {
       icon: <AiOutlineHome size={20} />,
     },
     {
-      title: 'Stack',
+      title: 'Tech Stack',
       link: '#techstack',
       icon: <BsCodeSlash size={20} />,
     },
