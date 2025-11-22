@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: docker
+    runs-on: node20
     steps:
       - name: Check out code
         uses: actions/checkout@v4
